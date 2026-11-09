@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Request Project Estimate | Gray Matter AI</title>
+
+      <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <main class="order-page">
+    <section class="order-section">
+      <div class="order-container">
+        <div class="section-kicker">Project Request</div>
+
+        <h1>Request your project estimate</h1>
+
+        <p class="order-intro">
+          Review your selected estimate and submit your project details.
+        </p>
+
+        <div class="order-layout">
+          <aside class="order-summary-card">
+            <h2>Estimate Summary</h2>
+            <div id="orderEstimateSummary">
+              Loading estimate...
+            </div>
+          </aside>
+
+          <form class="order-form" id="orderForm">
+            <h2>Your Details</h2>
+
+            <label>
+              Full Name *
+              <input type="text" id="fullName" required />
+            </label>
+
+            <label>
+              Email *
+              <input type="email" id="email" required />
+            </label>
+
+            <label>
+              Phone *
+              <input type="tel" id="phone" required />
+            </label>
+
+            <label>
+              Company / Business Name
+              <input type="text" id="companyName" />
+            </label>
+
+            <label>
+              Preferred Contact
+              <select id="preferredContact">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </label>
+
+            <label>
+              Project Notes
+              <textarea id="projectNotes" rows="5"></textarea>
+            </label>
+
+            <button type="submit" class="request-estimate-btn">
+              Submit Project Request
+            </button>
+
+            <p id="orderMessage"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/order.js"></script>
+</body>
+</html>
